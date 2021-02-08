@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cartão de visita - Glassmorphism</title>
+    <link rel="stylesheet" type="text/css" href="css/estilo.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous" />
+
+    <link rel="icon" href="./img/code.svg">
+</head>
+
+<body>
+    <main class="main">
+        <section class="glass">
+            <div class="dashboard">
+                <div class="user">
+                    <img src="img/desenvolvimento_web_front_end_back_end_fullstack_javascript_css_html.jpeg" alt="avatar" />
+                    <h3></h3>
+                    <p>Estudante de Desenvolvimento Web</p>
+                </div>
+
+                <div class="links">
+                    <ul>
+                        <li class="link">
+                            <a href="https://www.linkedin.com/in/lucastamagnone/" target="_blank"><i
+                                    class="fa fa-linkedin-square" aria-hidden="true"></i></a>
+                            <a href="https://www.linkedin.com/in/lucastamagnone/" target="_blank"
+                                class="social-text">LinkedIn</a>
+                        </li>
+                        <li class="link">
+                            <a href="https://github.com/lucaspioto" target="_blank"><i class="fa fa-github"
+                                    aria-hidden="true"></i></a>
+                            <a href="https://github.com/lucaspioto" target="_blank" class="social-text">Github</a>
+                        </li>
+                        <li class="link">
+                            <a href="https://api.whatsapp.com/send?phone=5551982026917&text=Olá%20Lucas,%20tudo%20bem?"
+                                target="_blank"><i class="fa fa-whatsapp" aria-hidden="true"></i></a>
+                            <a href="https://api.whatsapp.com/send?phone=5551982026917&text=Olá%20Lucas,%20tudo%20bem?"
+                                target="_blank" class="social-text">WhatsApp</a>
+                        </li>
+                        <li class="link">
+                            <a href="mailto:lucaspioto@gmail.com"><i class="fa fa-envelope" aria-hidden="true"></i></a>
+                            <a href="mailto:lucaspioto@gmail.com" target="_blank" class="social-text">E-mail</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="pro">
+                    <h2>Hello World!</h2>
+                    <a href="#"><i class="fa fa-code" aria-hidden="true"></i></a>
+                </div>
+            </div>
+
+            <div class="codes">
+                <div class="status">
+                    <h1>Hard Skills</h1>
+                    <input type="text" disabled />
+                </div>
+
+                <ul class="cards">
+                    <li class="card">
+                        <img src="img/css-3.svg" alt="css" />
+                        <div class="card-info">
+                            <h2>CSS Development</h2>
+                            <p>projects</p>
+                            <div class="progress css"></div>
+                        </div>
+                        <h2 class="percentage"></h2>
+                    </li>
+
+                    <li class="card">
+                        <img src="img/html-5.svg" alt="html" />
+                        <div class="card-info">
+                            <h2>HTML Development</h2>
+                            <p>projects</p>
+                            <div class="progress html"></div>
+                        </div>
+                        <h2 class="percentage"></h2>
+                    </li>
+
+                    <li class="card">
+                        <img src="img/javascript.svg" alt="javascript" />
+                        <div class="card-info">
+                            <h2>Javascript Dev</h2>
+                            <p>projects</p>
+                            <div class="progress js"></div>
+                        </div>
+                        <h2 class="percentage"></h2>
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </main>
+    
+    <script src="./js/script.js"></script>
+    <script>
+        VanillaTilt.init(document.querySelector(".glass"), {
+            max: 15,
+            speed: 400,
+        });
+    </script>
+</body>
+
+</html>
